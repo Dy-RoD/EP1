@@ -33,7 +33,7 @@ registro de psicólogos que ofrecen diferentes servicios para la atención de la
 - Roles involucrados: Cliente/Usuario.
 - Análisis: Permite a los usuarios encontrar rápidamente a un psicólogo que se ajuste a sus necesidades específicas.
 - Diseño: Barra de búsqueda con opciones de búsqueda en tiempo real que aparece al apretar el icono en forma de lupa.
--  **__Observación__: Esta Funcionalidad esta presente en todas las paginas por lo que no es necesario crear una nueva (pagina).**
+-  **_Observación_: Esta Funcionalidad esta presente en todas las paginas por lo que no es necesario crear una nueva (pagina).**
 
 
 - - ## EVALUACION DE SERVICIOS:
@@ -41,7 +41,7 @@ registro de psicólogos que ofrecen diferentes servicios para la atención de la
 - Roles involucrados: Cliente/Usuario.
 - Análisis: Fomenta la transparencia y permite a los usuarios nuevos basarse en experiencias previas para elegir psicólogos.
 - Diseño: Sistema de evaluación con estrellas y campo para comentarios, visible en el perfil del psicólogo.
-- **__Observación__: Esta Funcionalidad está presente en todas las páginas, por lo que no es necesario crear una nueva (pagina).**
+- **_Observación_: Esta Funcionalidad está presente en las páginas "PerfilPsicologo" y "Chatea", por lo que no es necesario crear paginas extras.**
 
 
 - - ## MODULO DE PAGOS:
@@ -67,10 +67,10 @@ registro de psicólogos que ofrecen diferentes servicios para la atención de la
 
 ## Prototipado en Figma
 
-[Prototipo Creado en Figma](https://www.figma.com/design/UISLU6SCwzGwO3Q3YaHHgu/Ing-Web?node-id=0-1&t=WlUnbO4bjDrP5p23-1)
+[Prototipado de Cada Funcionalidad](https://www.figma.com/design/UISLU6SCwzGwO3Q3YaHHgu/Ing-Web?node-id=0-1&t=WlUnbO4bjDrP5p23-1)
 
 ## Maquetación Responsiva
-La aplicación será desarrollada con HTML5, CSS3 y JavaScript, utilizando frameworks como Bootstrap y CSS para la maquetación responsiva.
+La aplicación será desarrollada con HTML5, CSS3 y JavaScript, utilizando CSS y frameworks como Bootstrap para la maquetación responsiva.
 
 ## Tecnologías
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
