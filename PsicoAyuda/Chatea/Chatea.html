@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatea</title>    
+    <!--Estilos de Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="StyleChatea/style.css">
+</head> 
+<body>
+    <header>
+        <!---Menu de Opciones Mas Logo-->
+        <div class="barra">
+            <img class="logo" src="../Images/logo.png" alt="logo">
+            <button id="btAbrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav id="nav" class="nav-menu">
+                <button id="btCerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+                <ul class="nav-list">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li id="li-icon-buscar" class="buscar"><a href="#Buscar"><i class="bi bi-search" id="icon-buscar"></i></a></li>
+                    <li class="buscarMovil" id="icon-buscar"><a href="#Buscar-Movil">Buscar</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#Quienes-Somos">Quienes somos</a></li>
+                    <li><a href="#Inicia-Sesion">Mi Perfil</a></li>
+                    <li><a href="#Registrarse">Cerrar Sesion</a></li>
+                </ul>
+            </nav>             
+        </div>
+    </header>
+    <!--Buscador Mas Cajon de Sugerencias-->
+    <div id="contenedor-busqueda">
+        <input type="text" id="inputBusqueda" placeholder="¿Qué deseas buscar?">
+        <ul id="sugestiones">
+            <li><a href="#Comuna-Valparaiso"><i class="bi bi-search"></i>Valparaiso</a></li>
+            <li><a href="#Comuna-Santiago"><i class="bi bi-search"></i>Santiago</a></li>
+            <li><a href="#Lupita-Rodriguez"><i class="bi bi-search"></i>Lupita Rodriguez</a></li>
+            <li><a href="#Bella-Kodpher"><i class="bi bi-search"></i>Bella Kodpher</a></li>
+            <li><a href="#Proyecto-Prototipo"><i class="bi bi-search"></i>Sugerencias a tiempo real!</a></li>
+        </ul>    
+    </div>
+    <div id="cover-busqueda"></div>
+    <!--Comienzo Pag-->
+    <div class="informacion">
+        <!--Seccion Usuario, Contiene Foto Usuario, Nombre, Calificacion y Contacto a Travez de Whatsapp -->
+        <section class="seccionUsuario">
+            <div class="container-Usuario">
+                <img class="perfilIMG" src="../Images/imagePerfil.svg" alt="perfil">
+                <h2 class="calificaciones">4.5/5 <i class="bi bi-star-fill"></i></h2>
+            </div>
+            <h1 class="nombre">Lupita Rodriguez</h1>
+            <div class="contBt">
+                <!--Whatsapp del Psicologo Para Poder Contactar con El-->
+                <a href="https://wa.me/56935270762?text=Hola!%2C%20preg%C3%BAntame%20lo%20que%20necesites%20%3AD" target="_blank">
+                    <button id="chatbt" class="chateaBt">
+                        <i class="bi bi-whatsapp"></i>
+                    </button>
+                </a>
+            </div>
+            <hr class="lineaTitulo"><!--Linea Separadora de Secciones-->
+        </section>
+        <!--Seccion Titulos, Contiene, Los titulos Obtenidos por EL Psicologo-->
+        <section class="seccionTitulos">
+            <div class="container-Titulos">
+                <h2 class="titulo">Titulos</h2>
+                <ul>
+                    <li><img class="star" src="../Images/starSelect.png" alt="estrella"> Psicologia - Pontificia Universidad Catolica de Valparaíso.</li>
+                </ul>
+            </div>
+            <hr>
+        </section>
+        <!--Seccion Especialidades, Contiene Las Especialidades del Psicologo (Experto o Expecialista en)-->
+        <section class="seccionEspecialidades">
+            <div class="container-Especialidades">
+                <h2>Especialidades</h2>
+                <ul>
+                    <li><img class="star" src="../Images/starSelect.png" alt="estrella"> Psicologia de Pareja y Familiar.</li>
+                </ul>
+            </div>
+            <hr>
+        </section>
+        <!--Seccion Experiencias, Contiene Las Experiencias Trabajando del Psicologo-->
+        <section class="seccionExperiencias">
+            <div class="container-Experiencias">
+                <h2>Experiencias</h2>
+                <ul>
+                    <li><img class="star" src="../Images/starSelect.png" alt="estrella"> 5 años en activo funcionamiento dentro del area.</li>
+                </ul>
+            </div>
+            <hr>
+        </section>    
+        <!--Seccion Recomendaciones, Contiene Contenido de Ayuda Para Usuarios que el Psicologo Trate-->
+        <section class="seccionRecomendaciones">
+            <div class="container-Recomendaciones">
+                <h2><i class="bi bi-unlock"></i> Recomendaciones</h2>
+                <ul>
+                    <li><img class="star" src="../Images/starSelect.png" alt="estrella"> Consejos para una buena convivencia: https://www.youtube.com/watch?v=dQw4w9WgXcQ</li>
+                    <li><img class="star" src="../Images/starSelect.png" alt="estrella"> Articulo sobre relaciones sanas:https://es.wikipedia.org/wiki/No-Utilizar-Wikipedia-Como-Fuente</li>
+                </ul>
+            </div>
+            <hr>
+        </section>    
+        <!--Seccion Comentarios, Contiene Comentarios que Distintos Usuarios Hacen Sobre el Psicologo-->
+        <section class="seccionComentarios">
+            <div class="container-Comentarios">
+                <h2>Comentarios</h2>
+                <ul>
+                    <li>Bella Kodpher.</li>
+                    <li>Recomendadisima! mi pareja y yo pudimos salir a delante despues de su ayuda a travez de las sesiones.</li>
+                </ul>
+            </div>
+            <hr>
+        </section>        
+    </div>
+    <!--Termino Pag-->
+    <!--Footer-->
+    <footer>
+        @2024 hecho por Dylan Rodriguez
+    </footer>
+    <!--Boton Para Volver Atras Para Version Mobile-->
+    <div class="btVolver">
+        <button class="atras"><i class="bi bi-arrow-left"></i></button>
+    </div>
+    <!--JavaScript Para Pagina-->
+    <script src="Js/chatea.js"></script>
+</body>
+</html>

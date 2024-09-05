@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <!--Estilos de Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="styleCalendario/style.css">
+</head>
+<body> 
+    <header>
+        <!---Menu de Opciones Mas Logo-->
+        <div class="barra">
+            <img class="logo" src="../Images/logo.png" alt="logo">
+            <button id="btAbrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav id="nav" class="nav-menu">
+                <button id="btCerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+                <ul class="nav-list">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li id="li-icon-buscar" class="buscar"><a href="#Buscar"><i class="bi bi-search" id="icon-buscar"></i></a></li>
+                    <li class="buscarMovil" id="icon-buscar"><a href="#Buscar-Movil">Buscar</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#Quienes-Somos">Quienes somos</a></li>
+                    <li><a href="#Inicia-Sesion">Mi Perfil</a></li>
+                    <li><a href="#Registrarse">Cerrar Sesion</a></li>
+                </ul>
+            </nav>             
+        </div>
+    </header>
+    <!--Buscador Mas Cajon de Sugerencias-->
+    <div id="contenedor-busqueda">
+        <input type="text" id="inputBusqueda" placeholder="¿Qué deseas buscar?">
+        <ul id="sugestiones">
+            <li><a href="#Comuna-Valparaiso"><i class="bi bi-search"></i>Valparaiso</a></li>
+            <li><a href="#Comuna-Santiago"><i class="bi bi-search"></i>Santiago</a></li>
+            <li><a href="#Lupita-Rodriguez"><i class="bi bi-search"></i>Lupita Rodriguez</a></li>
+            <li><a href="#Bella-Kodpher"><i class="bi bi-search"></i>Bella Kodpher</a></li>
+            <li><a href="#Proyecto-Prototipo"><i class="bi bi-search"></i>Sugerencias a tiempo real!</a></li>
+        </ul>    
+    </div>
+    <div id="cover-busqueda"></div>
+    <!--Comienzo Pag-->
+    <h1 class="psicologo">Lupita Rodriguez - Psicologa</h1><!--Nombre del Psicologo-->
+    <!--Inicio Creacion de Calendario-->
+    <div class="body-calendario">
+        <div class="container-calendario">
+            <!--Lado Izquierdo del Calendario, Contiene los Dias, Semanas, Meses y Año-->
+            <div class="izquierda">
+                <div class="calendario">
+                    <div class="mes">
+                        <i class="bi bi-arrow-left-short"></i>
+                        <div class="fecha">septiembre 2024</div>
+                        <i class="bi bi-arrow-right-short"></i>
+                    </div>
+                    <div class="semana">
+                        <div>dom</div>
+                        <div>lun</div>
+                        <div>mar</div>
+                        <div>mie</div>
+                        <div>jue</div>
+                        <div>vie</div>
+                        <div>sab</div>
+                    </div>
+                    <div class="dias">
+                        <div class="dia previo">30</div>
+                        <div class="dia previo">31</div>
+                        <div class="dia hoy">1</div>
+                        <div class="dia">2</div>
+                        <div class="dia">3</div>
+                        <div class="dia">4</div>
+                        <div class="dia">5</div>
+                        <div class="dia">6</div>
+                        <div class="dia">7</div>
+                        <div class="dia">8</div>
+                        <div class="dia evento seleccionado">9</div>
+                        <div class="dia">10</div>
+                        <div class="dia">11</div>
+                        <div class="dia">12</div>
+                        <div class="dia evento">13</div>
+                        <div class="dia">14</div>
+                        <div class="dia">15</div>
+                        <div class="dia">16</div>
+                        <div class="dia">17</div>
+                        <div class="dia">18</div>
+                        <div class="dia">19</div>
+                        <div class="dia">20</div>
+                        <div class="dia evento">21</div>
+                        <div class="dia">22</div>
+                        <div class="dia">23</div>
+                        <div class="dia">24</div>
+                        <div class="dia">25</div>
+                        <div class="dia">26</div>
+                        <div class="dia">27</div>
+                        <div class="dia">28</div>
+                        <div class="dia">29</div>
+                        <div class="dia">30</div>
+                        <div class="dia">31</div>
+                        <div class="dia siguiente">1</div>
+                        <div class="dia siguiente">2</div>
+                    </div>
+                </div>
+            </div>
+            <!--Termino Lado Izquierdo-->
+            <!--Lado Derecho del Calendario, Contiene el Dia Seleccionado, Reservas y Opcion de Añadir Reservas-->
+            <div class="derecha">
+                <div class="fecha-hoy">
+                    <div class="dia-evento">Mie</div>
+                    <div class="fecha-evento">9 Septiembre 2024</div>
+                </div>
+                <div class="eventos">
+                    <div class="evento">
+                        <div class="titulo">
+                            <i class="bi bi-balloon-heart"></i>
+                            <h3 class="titulo-evento">Reserva 1</h3>
+                        </div>
+                        <div class="hora-evento">
+                            09:30AM - 10:30AM
+                        </div>
+                    </div>
+                    <div class="evento">
+                        <div class="titulo">
+                            <i class="bi bi-balloon-heart"></i>
+                            <h3 class="titulo-evento">Reserva 2</h3>
+                        </div>
+                        <div class="hora-evento">
+                            11:30AM - 12:30PM
+                        </div>
+                    </div>
+                    <div class="evento">
+                        <div class="titulo">
+                            <i class="bi bi-balloon-heart"></i>
+                            <h3 class="titulo-evento">Reserva 3</h3>
+                        </div>
+                        <div class="hora-evento">
+                            03:30PM - 04:30AM
+                        </div>
+                    </div>
+                </div>
+                <!--Boton de Añadir Reservas-->
+                <div class="contenedor-aniadir-evento">
+                    <div class="agregar-evento">
+                    <div class="agregar-titulo-evento">
+                        <div class="titulo-evento">Agregar Evento</div>
+                        <i class="bi bi-x"></i>
+                    </div>
+                    <div class="detalles-evento">
+                        <div class="input-evento">
+                            <input type="text" placeholder="Nombre Reserva" class="nombre-evento">
+                        </div>
+                        <div class="input-evento">
+                            <input type="text" placeholder="Hora Inicio" class="inicio-evento">
+                        </div>
+                        <div class="input-evento">
+                            <input type="text" placeholder="Hora Termino" class="termino-evento">
+                        </div>
+                    </div>
+                    <div class="agregar-boton-evento">
+                        <button class="agregar-bt-evento">Añadir Evento</button>
+                    </div>
+                </div>
+                <button class="aniadir-evento">
+                    <i class="bi bi-calendar-plus"></i>
+                </button>
+                </div>
+            </div>
+            <!--Termino Parte Derecha-->
+        </div> 
+    </div>
+    <!--Termino Pag-->
+    <!--Footer-->
+    <footer>
+        @2024 hecho por Dylan Rodriguez
+    </footer>
+    <!--Boton Para Volver Atras Para Version Mobile-->
+    <div class="btVolver">
+        <button class="atras"><i class="bi bi-arrow-left"></i></button>
+    </div>
+    <!--JavaScript Para Pagina-->
+    <script src="Js/calendario.js"></script>
+</body>
+</html>

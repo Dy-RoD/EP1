@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo de Pago</title>
+    <!--Estilos de Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="styleMetodoPago/style.css">
+</head>
+<body>
+    <header>
+        <!---Menu de Opciones Mas Logo-->
+        <div class="barra">
+            <img class="logo" src="../Images/logo.png" alt="logo">
+            <button id="btAbrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav id="nav" class="nav-menu">
+                <button id="btCerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+                <ul class="nav-list">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li id="li-icon-buscar" class="buscar"><a href="#Buscar"><i class="bi bi-search" id="icon-buscar"></i></a></li>
+                    <li class="buscarMovil" id="icon-buscar"><a href="#Buscar-Movil">Buscar</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#Quienes-Somos">Quienes somos</a></li>
+                    <li><a href="#Inicia-Sesion">Inicia Sesion</a></li>
+                    <li><a href="#Registrarse">Unete!</a></li>
+                </ul>
+            </nav>             
+        </div>
+    </header>
+    <!--Buscador Mas Cajon de Sugerencias-->
+    <div id="contenedor-busqueda">
+        <input type="text" id="inputBusqueda" placeholder="¿Qué deseas buscar?">
+        <ul id="sugestiones">
+            <li><a href="#Comuna-Valparaiso"><i class="bi bi-search"></i>Valparaiso</a></li>
+            <li><a href="#Comuna-Santiago"><i class="bi bi-search"></i>Santiago</a></li>
+            <li><a href="#Lupita-Rodriguez"><i class="bi bi-search"></i>Lupita Rodriguez</a></li>
+            <li><a href="#Bella-Kodpher"><i class="bi bi-search"></i>Bella Kodpher</a></li>
+            <li><a href="#Proyecto-Prototipo"><i class="bi bi-search"></i>Sugerencias a tiempo real!</a></li>
+        </ul>    
+    </div>
+    <div id="cover-busqueda"></div>
+    <!--Comienzo Pag-->
+    <!--Contenedor Para Centrar Informacion del Psicologo-->
+    <div class="centrar-informacion">
+        <h1>Información de Reserva</h1>
+        <h2>Psicólogo: Lupita Rodriguez</h2>
+        <h2>Fecha: 13/11/2024</h2>     
+    </div>
+    
+    <!--Contenedor Para Centrar Informacion de Pago-->
+    <div class="centrar-form">
+        <section  class="pago">
+            <!--Inicio de Formulario-->
+            <form>
+                <label>Email</label>
+                <input class="input-Pago" type="email" placeholder="ejemplo@ejemplo.com">
+                <label>Informacion de tarjeta</label>
+                <input class="input-Pago" type="text" placeholder="1234-1234-1234-1234" >
+                <div class="container-datos">
+                    <input class="input-Pago" type="text" placeholder="MM/AA">
+                    <input class="input-Pago" class="cvv" type="text" placeholder="CVV">
+                    <img class="tarjetas" src="../Images/tarjetas.png" alt="">    
+                </div>
+                <label>Nombre</label>
+                <input class="input-Pago" type="text" placeholder="Nombre del titular de la tarjeta">
+                <label>Pais</label>
+                <!--Selecion de Paises Segun de Donde Sea el Usuario-->
+                <select name="paises" id="">
+                    <option value="Chile">Chile</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                </select>
+                <button class="pagar">Pagar</button>
+            </form>
+        </section>            
+    </div>
+    <!--Footer-->
+    <footer>
+        @2024 hecho por Dylan Rodriguez
+    </footer>
+    <!--Boton Para Volver Atras Para Version Mobile-->
+    <div class="btVolver">
+        <button class="atras"><i class="bi bi-arrow-left"></i></button>
+    </div>
+    <!--JavaScript Para Pagina-->
+    <script src="Js/MetodoPago.js"></script>
+</body>
+</html>

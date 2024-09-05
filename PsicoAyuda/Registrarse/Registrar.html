@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <!--Estilos de Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="styleRegistrar/style.css">
+</head>
+<body>
+    <header>
+        <!---Menu de Opciones Mas Logo-->
+        <div class="barra">
+         <img class="logo" src="../Images/logo.png" alt="logo">
+         <button id="btAbrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+         <nav id="nav" class="nav-menu">
+             <button id="btCerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+             <ul class="nav-list">
+                 <li><a href="#Inicio">Inicio</a></li>
+                 <li id="li-icon-buscar" class="buscar"><a href="#Buscar"><i class="bi bi-search" id="icon-buscar"></i></a></li>
+                 <li class="buscarMovil" id="icon-buscar"><a href="#Buscar-Movil">Buscar</a></li>
+                 <li><a href="#servicios">Servicios</a></li>
+                 <li><a href="#Quienes-Somos">Quienes somos</a></li>
+                 <li><a href="#Inicia-Sesion">Inicia-Sesion</a></li>
+                 <li><a href="#Registrarse">Unete!</a></li>
+             </ul>
+         </nav>             
+     </div>
+     </header>
+     <!--Buscador Mas Cajon de Sugerencias-->
+     <div id="contenedor-busqueda">
+         <input type="text" id="inputBusqueda" placeholder="¿Qué deseas buscar?">
+         <ul id="sugestiones">
+             <li><a href="#Comuna-Valparaiso"><i class="bi bi-search"></i>Valparaiso</a></li>
+             <li><a href="#Comuna-Santiago"><i class="bi bi-search"></i>Santiago</a></li>
+             <li><a href="#Lupita-Rodriguez"><i class="bi bi-search"></i>Lupita Rodriguez</a></li>
+             <li><a href="#Bella-Kodpher"><i class="bi bi-search"></i>Bella Kodpher</a></li>
+             <li><a href="#Proyecto-Prototipo"><i class="bi bi-search"></i>Sugerencias a tiempo real!</a></li>
+         </ul>    
+     </div>
+     <div id="cover-busqueda"></div>
+     <!--Comienzo Pag-->
+     <div class="centrar-registrar">
+        <section  class="registrar">
+            <form id="formRegistro">
+                <h1>Registrate!</h1>
+                <label>Nombre</label>
+                <input class="input-Registrarse" type="text" id="nombre" required>
+                <label>Apellido(s)</label>
+                <input class="input-Registrarse" type="text" id="apellido" required>
+                <label>Nombre de Usuario</label>
+                <input class="input-Registrarse" type="text" id="nomUsuario" required>
+                <label>RUT</label>
+                <input class="input-Registrarse" type="text" id="rut" required>
+                <label>Region</label>
+                <input class="input-Registrarse" type="text" id="region" required>
+                <label>Comuna</label>
+                <input class="input-Registrarse" type="text" id="comuna" required>
+                <label>E-mail</label>
+                <input class="input-Registrarse" type="email" id="email" required>
+                <label>Contraseña</label>
+                <input class="input-Registrarse" type="password" id="password" required>
+                <label>Confirmar Contraseña</label>
+                <input class="input-Registrarse" type="password" id="confirmPassword" required>
+                <div class="check">
+                    <input type="checkbox" id="tycCheckbox" required>
+                    <label><a href="#tyc">Terminos y condiciones</a></label>
+                </div>
+                <button class="ingresar" type="submit">Ingresar</button>
+            </form>
+        </section>            
+    </div>
+    <!--Termino Pag-->
+    <!--Footer-->
+    <footer>
+        @2024 hecho por Dylan Rodriguez
+    </footer>
+    <!--Boton Para Volver Atras Para Version Mobile-->
+    <div class="btVolver">
+        <button class="atras"><i class="bi bi-arrow-left"></i></button>
+    </div>
+    <!--JavaScript Para Pagina-->
+    <script src="Js/registrarse.js"></script>
+</body>
+</html>

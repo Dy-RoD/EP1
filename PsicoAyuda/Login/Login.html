@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Estilos de Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="styleLogin/style.css">
+</head>
+<body>
+    <header>
+        <!---Menu de Opciones Mas Logo-->
+        <div class="barra">
+         <img class="logo" src="../Images/logo.png" alt="logo">
+         <button id="btAbrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+         <nav id="nav" class="nav-menu">
+             <button id="btCerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+             <ul class="nav-list">
+                 <li><a href="#Inicio">Inicio</a></li>
+                 <li id="li-icon-buscar" class="buscar"><a href="#Buscar"><i class="bi bi-search" id="icon-buscar"></i></a></li>
+                 <li class="buscarMovil" id="icon-buscar"><a href="#Buscar-Movil">Buscar</a></li>
+                 <li><a href="#servicios">Servicios</a></li>
+                 <li><a href="#Quienes-Somos">Quienes somos</a></li>
+                 <li><a href="#Inicia-Sesion">Inicia Sesion</a></li>
+                 <li><a href="#Registrarse">Unete!</a></li>
+             </ul>
+         </nav>             
+     </div>
+     </header>
+     <!--Buscador Mas Cajon de Sugerencias-->
+     <div id="contenedor-busqueda">
+         <input type="text" id="inputBusqueda" placeholder="¿Qué deseas buscar?">
+         <ul id="sugestiones">
+             <li><a href="#Comuna-Valparaiso"><i class="bi bi-search"></i>Valparaiso</a></li>
+             <li><a href="#Comuna-Santiago"><i class="bi bi-search"></i>Santiago</a></li>
+             <li><a href="#Lupita-Rodriguez"><i class="bi bi-search"></i>Lupita Rodriguez</a></li>
+             <li><a href="#Bella-Kodpher"><i class="bi bi-search"></i>Bella Kodpher</a></li>
+             <li><a href="#Proyecto-Prototipo"><i class="bi bi-search"></i>Sugerencias a tiempo real!</a></li>
+         </ul>    
+     </div>
+     <div id="cover-busqueda"></div>
+    <!--Comienzo Pag-->
+    <div class="centrar-login">
+        <section  class="login">
+            <form id="formLogin">
+                <h1>Inicia Seción!</h1>
+                <label for="email">Email:</label>
+                <input class="input-Login" type="text" id="email">
+                <label for="password">Contraseña:</label>
+                <input class="input-Login" type="password" id="password">
+                <button class="ingresar">Ingresar</button>
+                <button class="registrarse">Registrate!</button>
+            </form>
+
+        </section>            
+    </div>
+    <!--Footer-->
+    <footer>
+        @2024 hecho por Dylan Rodriguez
+    </footer>
+    <!--Boton Para Volver Atras Para Version Mobile-->
+    <div class="btVolver">
+        <button class="atras"><i class="bi bi-arrow-left"></i></button>
+    </div>
+    <!--JavaScript Para Pagina-->
+    <script src="Js/Login.js"></script>
+</body>
+</html>
+
+
+
