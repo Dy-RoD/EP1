@@ -65,3 +65,9 @@ function buscaSugerencias(){
         }
     } 
 }
+
+
+const pagar = document.querySelector("#BtnPagar");
+pagar.addEventListener("click", () => {
+    alert('Pago exitoso!')
+})

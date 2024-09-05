@@ -28,6 +28,10 @@ header{
 
 /* buscador */
 
+.bi-search{
+    cursor: pointer;
+}
+
 #contenedor-busqueda {
     position: fixed;
     top: -10px;
@@ -182,6 +186,11 @@ hr{
     margin-right: 40px;
     transform: translateY(-70px);
     
+}
+
+.reservaBt a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 hr{

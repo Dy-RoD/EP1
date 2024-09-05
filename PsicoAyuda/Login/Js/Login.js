@@ -84,5 +84,5 @@ document.getElementById('formLogin').addEventListener('submit', function(event) 
         return;
     }
     // Si todo Sale Bien Se Inicia Sesion
-    alert('SESION INICIADA !')
+    alert('SESION INICIADA !');
 });
