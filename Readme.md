@@ -6,11 +6,10 @@ registro de psicólogos que ofrecen diferentes servicios para la atención de la
 
 ## Tabla de Contenidos
 
-1. [Análisis de las Funcionalidades](#análisisdelasfuncionalidades)
-2. [Prototipado Figma](#prototipadofigma)
-3. [Maquetación Responsiva](#maquetaciónresponsiva)
-4. [Formularios y Validación](#formulariosyvalidación)
-5. [Tecnologías](#tecnologías)
+1. [Análisis de las Funcionalidades](#Análisis-de-las-Funcionalidades)
+2. [Prototipado Figma](#Prototipado-en-Figma)
+3. [Maquetación Responsiva](#Maquetación-Responsiva)
+4. [Tecnologías](#tecnologías)
 
 
 ## Análisis de las Funcionalidades
