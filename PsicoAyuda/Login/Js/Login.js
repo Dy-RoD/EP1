@@ -13,6 +13,14 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
 
+// Boton Para Volver Una Pagina Atras Version Mobile
+const BtonVolver = document.querySelector("#BtnAtras");
+
+// Funcion que Hace Posible Volver Atras en Version Mobile
+BtonVolver.addEventListener("click", () => {
+    history.back()
+})
+
 // BUSCADOR //
 
 // Variables Para el Buscador

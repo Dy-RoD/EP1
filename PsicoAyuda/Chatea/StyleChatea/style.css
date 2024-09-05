@@ -331,5 +331,6 @@ footer{
         border: 0;
         font-size: 40px;
         cursor: pointer;
+        z-index: 8;
     }
 }
