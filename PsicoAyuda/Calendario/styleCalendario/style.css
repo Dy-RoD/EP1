@@ -305,6 +305,58 @@ header{
     padding-bottom: 10px;
 }
 
+.calendario .buscar-fecha{
+    width: 100%;
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+}
+
+.calendario .buscar-fecha .cont-fecha{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid blueviolet;
+}
+
+.calendario .buscar-fecha .cont-fecha input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: blueviolet;
+}
+
+.calendario .buscar-fecha button{
+    padding: 5px;
+    border: 2px solid blueviolet;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.calendario .buscar-fecha button:hover{
+    color: #ffffff;
+    background-color: blueviolet;
+}
+
+.calendario .buscar-fecha .cont-fecha button{
+    border: none;
+    border-left: 1px solid blueviolet;
+    border-radius: 0;
+    padding: 7px;
+}
+
 .calendario .derecha{
     position: relative;
     width: 40%;
