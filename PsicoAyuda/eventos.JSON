@@ -1,0 +1,47 @@
+[
+    {
+        "dia": 10,
+        "mes": 9,
+        "anio": 2024,
+        "eventos": [
+            {
+                "titulo": "Reserva 1",
+                "hora": "10:00 AM"
+            },
+            {
+                "titulo": "Reserva 2",
+                "hora": "11:00 AM"
+            }
+        ]
+    },
+    {
+        "dia": 13,
+        "mes": 9,
+        "anio": 2024,
+        "eventos": [
+            {
+                "titulo": "Reserva 1",
+                "hora": "09:00 AM"
+            },
+            {
+                "titulo": "Reserva 2",
+                "hora": "14:00 PM"
+            }
+        ]
+    },
+    {
+        "dia": 21,
+        "mes": 9,
+        "anio": 2024,
+        "eventos": [
+            {
+                "titulo": "Reserva 1",
+                "hora": "15:00 PM"
+            },
+            {
+                "titulo": "Reserva 2",
+                "hora": "16:00 PM"
+            }
+        ]
+    }
+]

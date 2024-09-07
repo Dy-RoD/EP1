@@ -10,7 +10,7 @@
     <!--Estilos de CSS-->
     <link rel="stylesheet" href="styleCalendario/style.css">
 </head>
-<body> 
+<body>
     <header>
         <!---Menu de Opciones Mas Logo-->
         <div class="barra">
@@ -51,7 +51,7 @@
                 <div class="calendario">
                     <div class="mes">
                         <i class="bi bi-arrow-left-short"></i>
-                        <div class="fecha">septiembre 2024</div>
+                        <div class="fecha"></div>
                         <i class="bi bi-arrow-right-short"></i>
                     </div>
                     <div class="semana">
@@ -64,48 +64,14 @@
                         <div>sab</div>
                     </div>
                     <div class="dias">
-                        <div class="dia previo">30</div>
-                        <div class="dia previo">31</div>
-                        <div class="dia hoy">1</div>
-                        <div class="dia">2</div>
-                        <div class="dia">3</div>
-                        <div class="dia">4</div>
-                        <div class="dia">5</div>
-                        <div class="dia">6</div>
-                        <div class="dia">7</div>
-                        <div class="dia">8</div>
-                        <div class="dia evento seleccionado">9</div>
-                        <div class="dia">10</div>
-                        <div class="dia">11</div>
-                        <div class="dia">12</div>
-                        <div class="dia evento">13</div>
-                        <div class="dia">14</div>
-                        <div class="dia">15</div>
-                        <div class="dia">16</div>
-                        <div class="dia">17</div>
-                        <div class="dia">18</div>
-                        <div class="dia">19</div>
-                        <div class="dia">20</div>
-                        <div class="dia evento">21</div>
-                        <div class="dia">22</div>
-                        <div class="dia">23</div>
-                        <div class="dia">24</div>
-                        <div class="dia">25</div>
-                        <div class="dia">26</div>
-                        <div class="dia">27</div>
-                        <div class="dia">28</div>
-                        <div class="dia">29</div>
-                        <div class="dia">30</div>
-                        <div class="dia">31</div>
-                        <div class="dia siguiente">1</div>
-                        <div class="dia siguiente">2</div>
+                        <!--Se agregan Dias mediante JavaScript-->
                     </div>
                     <div class="buscar-fecha">
                         <div class="cont-fecha">
                             <input type="text" placeholder="mm/yyyy" class="fecha-input">
                             <button class="ir-fecha">ver</button>
                         </div>
-                        <button class="hoy">Hoy</button>
+                        <button class="btn-hoy">Hoy</button>
                     </div>
                 </div>
             </div>
@@ -113,37 +79,11 @@
             <!--Lado Derecho del Calendario, Contiene el Dia Seleccionado, Reservas y Opcion de Añadir Reservas-->
             <div class="derecha">
                 <div class="fecha-hoy">
-                    <div class="dia-evento">Mie</div>
-                    <div class="fecha-evento">9 Septiembre 2024</div>
+                    <div class="dia-evento"></div>
+                    <div class="fecha-evento"></div>
                 </div>
                 <div class="eventos">
-                    <div class="evento">
-                        <div class="titulo">
-                            <i class="bi bi-balloon-heart"></i>
-                            <h3 class="titulo-evento">Reserva 1</h3>
-                        </div>
-                        <div class="hora-evento">
-                            09:30AM - 10:30AM
-                        </div>
-                    </div>
-                    <div class="evento">
-                        <div class="titulo">
-                            <i class="bi bi-balloon-heart"></i>
-                            <h3 class="titulo-evento">Reserva 2</h3>
-                        </div>
-                        <div class="hora-evento">
-                            11:30AM - 12:30PM
-                        </div>
-                    </div>
-                    <div class="evento">
-                        <div class="titulo">
-                            <i class="bi bi-balloon-heart"></i>
-                            <h3 class="titulo-evento">Reserva 3</h3>
-                        </div>
-                        <div class="hora-evento">
-                            03:30PM - 04:30AM
-                        </div>
-                    </div>
+                    
                 </div>
                 <!--Boton de Añadir Reservas-->
                 <div class="contenedor-aniadir-evento">
