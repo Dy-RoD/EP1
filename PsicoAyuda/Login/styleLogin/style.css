@@ -186,6 +186,7 @@ label{
     padding-left: 10px;
     padding-right: 10px;
     font-size: 10px;
+    text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
 }
